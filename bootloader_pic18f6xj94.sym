@@ -1,0 +1,131 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+005-008 bootloader.addr
+009-00A bootloader.addr_low
+00B     bootloader.addr_high
+00C     bootloader.reclen
+00D     bootloader.rectype
+00E     bootloader.idx
+00F-040 bootloader.buffer
+041     bootloader.ch
+042.0   bootloader.hexend
+043-044 bootloader.next_addr
+045     @@WRITE_PROGRAM_MEMORY.P1
+045-046 check_checksum.hex
+045     bootloader.@SCRATCH1
+046     bootloader.@SCRATCH2
+047     check_checksum.reclen
+047     bootloader.@SCRATCH3
+048     check_checksum.checksum
+048     bootloader.@SCRATCH4
+049     check_checksum.i
+04A-04B get_hexbyte.hex
+04C     get_hexbyte.i
+04D     get_hexbyte.ret
+04E     get_hexbyte.ch
+04F     get_hexbyte.@SCRATCH1
+EEF.0   MDBIT
+EEF.3   MDOUT
+F08     CCP_7
+F08     CCP_7_LOW
+F09     CCP_7_HIGH
+F0B     CCP_6
+F0B     CCP_6_LOW
+F0C     CCP_6_HIGH
+F0E     CCP_5_LOW
+F0E     CCP_5
+F0F     CCP_5_HIGH
+F11     CCP_4_LOW
+F11     CCP_4
+F12     CCP_4_HIGH
+F21     DSGPR3
+F22     DSGPR2
+F23     DSGPR1
+F24     DSGPR0
+F41     CCP_10_LOW
+F41     CCP_10
+F42     CCP_10_HIGH
+F44     CCP_9
+F44     CCP_9_LOW
+F45     CCP_9_HIGH
+F47     CCP_8
+F47     CCP_8_LOW
+F48     CCP_8_HIGH
+F4A     CCP_3_LOW
+F4A     CCP_3
+F4B     CCP_3_HIGH
+F4F     CCP_2_LOW
+F4F     CCP_2
+F50     CCP_2_HIGH
+F83     PSP_DATA
+FBA     CCP_1_LOW
+FBA     CCP_1
+FBB     CCP_1_HIGH
+FC4.0   C1OUT
+FC4.1   C2OUT
+FC4.2   C3OUT
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @@WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FE9-FEA @READ_PACKED_MEMORY.P5
+FF6-FF8 @@WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P3
+
+ROM Allocation:
+000008  isr_low
+000018  isr_high
+00002A  get_hexbyte
+000074  check_checksum
+0000A4  @@PUTCHARI_BIU_1
+0000B0  @@FLASHWR
+0000CE  @@WRITE_PROGRAM_MEMORY
+000122  bootloader
+000294  MAIN
+000294  @cinit1
+0002F8  @cinit2
+000400  application
+
+Project Directory:
+    D:\OneDrive\git\bootloader_pic18f6xj94\
+
+Project Files:
+    bootloader_pic18f6xj94.c                                [29-sep.-19 13:59  CRC=29016EF0]
+    bootloader.h                                            [28-sep.-19 18:05  CRC=0D03A364]
+    C:\Program Files (x86)\PICC\Devices\18F65J94.h          [17-abr.-19 14:57  CRC=3BADB0F1]
+    types.h                                                 [01-nov.-10 12:41  CRC=B50767DC]
+
+Source signature=DBC192FD
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=0C42
+
+Units:
+    D:\OneDrive\git\bootloader_pic18f6xj94\bootloader_pic18f6xj94 (main)
+
+Compiler Settings:
+    Processor:      PIC18F65J94
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   bootloader_pic18f6xj94.xsym
+    Errors:      bootloader_pic18f6xj94.err
+    Ext Symbols: bootloader_pic18f6xj94.esym
+    INHX32:      bootloader_pic18f6xj94.hex
+    Symbols:     bootloader_pic18f6xj94.sym
+    List:        bootloader_pic18f6xj94.lst
+    Debug/COFF:  bootloader_pic18f6xj94.cof
+    Project:     bootloader_pic18f6xj94.ccspjt
+    Call Tree:   bootloader_pic18f6xj94.tre
+    Statistics:  bootloader_pic18f6xj94.STA

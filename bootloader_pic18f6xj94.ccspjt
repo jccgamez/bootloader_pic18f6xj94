@@ -1,0 +1,75 @@
+[Directories]
+Include=<default>
+Library=
+LinkerScript=
+output=
+
+[defines]
+enabled=0
+chip=1
+D1=
+V1=
+buildcount=1
+
+[fileformats]
+forcecoff=0
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+expandtree=0
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+
+[PROJECT]
+Target=bootloader_pic18f6xj94.hex
+Development_Mode=
+Processor_Text=PIC18F65J94
+ToolSuite=CCS
+CCSVersion=5.085
+Compiler=PCH
+
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FH
+AdditionalOptionString=
+BuildRequired=1
+FileList=bootloader_pic18f6xj94.c
+
+[bootloader_pic18f6xj94.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=bootloader_pic18f6xj94.c
+
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+
+
+[CompilerVersion]
+Fixed=
+
+[ProjectLog]
+Days=1
+D1=30-09-2019
+D1_L=2
+D1_L1=[61523]Project Closed.
+D1_L2=[61523]Project Opened.
+
+[Opened Files]
+1=bootloader_pic18f6xj94.c
+t1=1
+Count=1
+[Units]
+Count=1
+1=bootloader_pic18f6xj94 (main)

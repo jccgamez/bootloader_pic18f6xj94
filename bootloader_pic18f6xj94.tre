@@ -1,0 +1,21 @@
+ÀÄbootloader_pic18f6xj94
+   ÃÄMAIN  0/126  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÀÄbootloader  0/370  Ram=68
+   ³     ÃÄget_hexbyte  0/74  Ram=6
+   ³     ÃÄcheck_checksum  0/48  Ram=5
+   ³     ³  ÀÄget_hexbyte  0/74  Ram=6
+   ³     ÃÄ@@PUTCHARI_BIU_1  0/12  Ram=0
+   ³     ÃÄget_hexbyte  0/74  Ram=6
+   ³     ÃÄget_hexbyte  0/74  Ram=6
+   ³     ÃÄget_hexbyte  0/74  Ram=6
+   ³     ÃÄget_hexbyte  0/74  Ram=6
+   ³     ÃÄ@@FLASHWR  0/30  Ram=0
+   ³     ÃÄ@@WRITE_PROGRAM_MEMORY  0/84  Ram=7
+   ³     ³  ÃÄ@@FLASHWR  0/30  Ram=0
+   ³     ³  ÀÄ@@FLASHWR  0/30  Ram=0
+   ³     ÃÄget_hexbyte  0/74  Ram=6
+   ³     ÀÄ@@PUTCHARI_BIU_1  0/12  Ram=0
+   ÃÄapplication  0/6  Ram=0
+   ÃÄisr_low  0/8  Ram=0
+   ÀÄisr_high  0/8  Ram=0
